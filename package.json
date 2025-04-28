@@ -20,7 +20,7 @@
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^1.0.0"
+    "@tailwindcss/postcss": "^4.0.0"
   },
   "description": ""
 }
