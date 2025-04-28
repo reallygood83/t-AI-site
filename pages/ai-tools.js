@@ -25,7 +25,7 @@ const AiTools = () => {
                 <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                   <div className="h-48 bg-indigo-100 relative overflow-hidden">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <img src="/quiz.png" alt="AI 퀴즈 생성기" className="w-16 h-16 object-contain" />
+                      <span className="text-6xl mb-4">📝</span>
                     </div>
                     <div className="absolute top-0 right-0 bg-indigo-500 text-white py-1 px-3 text-sm rounded-bl-lg">
                       인기
@@ -47,7 +47,7 @@ const AiTools = () => {
                 <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                   <div className="h-48 bg-purple-100 relative overflow-hidden">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <img src="/survey.png" alt="AI 설문 생성기" className="w-16 h-16 object-contain" />
+                      <span className="text-6xl mb-4">📊</span>
                     </div>
                   </div>
                   <div className="p-6">
@@ -66,7 +66,7 @@ const AiTools = () => {
                 <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 opacity-75">
                   <div className="h-48 bg-blue-100 relative overflow-hidden">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <img src="/notice.png" alt="AI 통신문 생성기" className="w-16 h-16 object-contain" />
+                      <span className="text-6xl mb-4">✉️</span>
                     </div>
                     <div className="absolute top-0 right-0 bg-yellow-500 text-white py-1 px-3 text-sm rounded-bl-lg">
                       준비중
