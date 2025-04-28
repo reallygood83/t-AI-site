@@ -19,7 +19,7 @@ const TeachersAI = () => {
           </div>
           <div className="hidden md:flex space-x-6">
             <a href="#intro" className="hover:text-yellow-200">서비스 소개</a>
-            <a href="#services" className="hover:text-yellow-200">사용 방법</a>
+            <a href="#services" className="hover:text-yellow-200">AI 도구</a>
             <a href="#community" className="hover:text-yellow-200">커뮤니티</a>
             <a href="https://www.notion.so/1b210244f997802f8557c739dd3986f6" className="hover:text-yellow-200">문의하기</a>
           </div>
@@ -53,8 +53,8 @@ const TeachersAI = () => {
             </div>
           </div>
           <div className="md:w-1/2">
-            <div className="bg-white rounded-lg shadow-xl overflow-hidden">
-              <img src="/api/placeholder/600/400" alt="Teachers AI 플랫폼 미리보기" className="w-full" />
+            <div className="bg-white rounded-lg shadow-xl overflow-hidden flex items-center justify-center min-h-[300px]">
+              <img src="/main_image.png" alt="Teachers AI 메인 이미지" className="w-full h-auto object-cover max-h-[400px]" />
             </div>
           </div>
         </div>
