@@ -31,7 +31,7 @@ const AiTools = () => {
           <div className="hidden md:flex space-x-6">
             <a href="/" className="hover:text-yellow-200">서비스 소개</a>
             <a href="/ai-tools" className="hover:text-yellow-200">AI 도구</a>
-            <a href="#community" className="hover:text-yellow-200">커뮤니티</a>
+            <a href="/community" className="hover:text-yellow-200">커뮤니티</a>
             <a href="https://www.notion.so/1b210244f997802f8557c739dd3986f6" className="hover:text-yellow-200">문의하기</a>
           </div>
           <div>
