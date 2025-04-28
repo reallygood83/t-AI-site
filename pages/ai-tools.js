@@ -56,10 +56,10 @@ const AiTools = () => {
         </div>
       )}
       <main className="flex-1">
-        <section className="py-16 bg-white">
+        <section className="py-8 bg-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-12 text-gray-800">AI <span className="text-indigo-600">도구</span></h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">AI <span className="text-indigo-600">도구</span></h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
               선생님들을 위한 다양한 AI 기반 교육 도구를 한 곳에서 편리하게 이용하세요.
             </p>
           </div>
