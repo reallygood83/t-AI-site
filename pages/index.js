@@ -48,7 +48,7 @@ const TeachersAI = () => {
                 지금 시작하기 →
               </button>
               <button className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-indigo-700 transition duration-300 flex items-center justify-center">
-                사용 방법 알아보기
+                AI 도구 알아보기
               </button>
             </div>
           </div>
