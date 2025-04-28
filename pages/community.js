@@ -95,6 +95,11 @@ const Community = () => {
           </div>
         </section>
       </main>
+      <footer className="bg-gray-800 text-gray-300 py-8 mt-8">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm">© 2025 안양 박달초 김문정 ㅣ <a href="https://www.youtube.com/@%EB%B0%B0%EC%9B%80%EC%9D%98%EB%8B%AC%EC%9D%B8-p5v" target="_blank" rel="noopener noreferrer" className="text-yellow-300 hover:underline">유튜브 배움의 달인</a></p>
+        </div>
+      </footer>
     </div>
   );
 };
