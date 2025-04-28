@@ -19,5 +19,8 @@
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.4"
   },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^1.0.0"
+  },
   "description": ""
 }
