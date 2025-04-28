@@ -1,13 +1,60 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 
 const AiTools = () => {
+  const [iframeUrl, setIframeUrl] = useState('');
+  const [showIframe, setShowIframe] = useState(false);
+
+  const openIframe = url => {
+    setIframeUrl(url);
+    setShowIframe(true);
+  };
+
+  const closeIframe = () => {
+    setShowIframe(false);
+    setIframeUrl('');
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Head>
         <title>AI 도구 - Teachers AI</title>
         <meta name="description" content="교사를 위한 다양한 AI 도구를 한 곳에서 만나보세요." />
       </Head>
+      {/* 네비게이션 바 */}
+      <nav className="bg-indigo-600 text-white p-4">
+        <div className="container mx-auto flex justify-between items-center">
+          <div className="flex items-center">
+            <div className="text-3xl font-bold mr-2">👨‍🏫</div>
+            <h1 className="text-2xl font-extrabold">Teachers <span className="text-yellow-300">AI</span></h1>
+          </div>
+          <div className="hidden md:flex space-x-6">
+            <a href="/" className="hover:text-yellow-200">서비스 소개</a>
+            <a href="/ai-tools" className="hover:text-yellow-200">AI 도구</a>
+            <a href="#community" className="hover:text-yellow-200">커뮤니티</a>
+            <a href="https://www.notion.so/1b210244f997802f8557c739dd3986f6" className="hover:text-yellow-200">문의하기</a>
+          </div>
+          <div>
+            <button className="bg-white text-indigo-600 px-4 py-2 rounded-full font-bold hover:bg-yellow-200 transition duration-300">
+              시작하기
+            </button>
+          </div>
+        </div>
+      </nav>
+      {/* iframe 모달 */}
+      {showIframe && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-lg w-full max-w-4xl h-[80vh] flex flex-col">
+            <div className="flex justify-between items-center p-4 border-b">
+              <span className="font-bold">외부 서비스</span>
+              <button onClick={closeIframe} className="text-gray-500 hover:text-gray-700">닫기</button>
+            </div>
+            <div className="flex-1 overflow-hidden">
+              <iframe src={iframeUrl} className="w-full h-full" title="외부 서비스" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" />
+            </div>
+          </div>
+        </div>
+      )}
       <main className="flex-1">
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 text-center">
@@ -21,7 +68,7 @@ const AiTools = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* AI 퀴즈 생성기 */}
-              <a href="https://script.google.com/macros/s/AKfycbxQSnmZ96aPFwH_Vns3p2dsTyrk9xifsqZgRXzACiKPqqUHvflSOQZJAFPiv3GkkuLj/exec" target="_blank" rel="noopener noreferrer" className="block group">
+              <a href="#" onClick={e => {e.preventDefault(); openIframe('https://script.google.com/macros/s/AKfycbxQSnmZ96aPFwH_Vns3p2dsTyrk9xifsqZgRXzACiKPqqUHvflSOQZJAFPiv3GkkuLj/exec');}} className="block group">
                 <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                   <div className="h-48 bg-indigo-100 relative overflow-hidden">
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -43,7 +90,7 @@ const AiTools = () => {
                 </div>
               </a>
               {/* AI 설문 생성기 */}
-              <a href="https://script.google.com/macros/s/AKfycbztKlHC2e49fhtDJKA9DXOBWoZHDlWtPo7xNji4v2rJ5elrbOCBN3ePs1o43uEBAdgpQQ/exec" target="_blank" rel="noopener noreferrer" className="block group">
+              <a href="#" onClick={e => {e.preventDefault(); openIframe('https://script.google.com/macros/s/AKfycbztKlHC2e49fhtDJKA9DXOBWoZHDlWtPo7xNji4v2rJ5elrbOCBN3ePs1o43uEBAdgpQQ/exec');}} className="block group">
                 <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                   <div className="h-48 bg-purple-100 relative overflow-hidden">
                     <div className="absolute inset-0 flex items-center justify-center">
