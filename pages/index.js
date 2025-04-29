@@ -48,9 +48,9 @@ const TeachersAI = () => {
               <button className="bg-white text-indigo-700 px-6 py-3 rounded-full font-bold hover:bg-yellow-200 transition duration-300 flex items-center justify-center" onClick={() => window.location.href='/ai-tools'}>
                 지금 시작하기 →
               </button>
-              <a href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-indigo-700 transition duration-300 flex items-center justify-center">
+              <button onClick={() => window.location.href='/api-key'} className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-indigo-700 transition duration-300 flex items-center justify-center">
                 API 발급받기
-              </a>
+              </button>
             </div>
           </div>
           <div className="md:w-1/2">
