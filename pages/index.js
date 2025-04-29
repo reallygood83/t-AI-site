@@ -139,14 +139,17 @@ const TeachersAI = () => {
             </a>
             
             {/* AI 통신문 생성기 */}
-            <div className="block group cursor-not-allowed">
-              <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 opacity-75">
+            <a href="https://script.google.com/macros/s/AKfycbzaAqlDZZycMuRp6YGhqSpurL-sseqj6VtksSyR5SMv8_WazTXpTN949RVAeprvkuqt-A/exec" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="block group">
+              <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                 <div className="h-48 bg-blue-100 relative overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-6xl mb-4">✉️</div>
+                    <span className="text-6xl mb-4">✉️</span>
                   </div>
-                  <div className="absolute top-0 right-0 bg-yellow-500 text-white py-1 px-3 text-sm rounded-bl-lg">
-                    준비중
+                  <div className="absolute top-0 right-0 bg-indigo-500 text-white py-1 px-3 text-sm rounded-bl-lg">
+                    New
                   </div>
                 </div>
                 <div className="p-6">
@@ -154,12 +157,12 @@ const TeachersAI = () => {
                   <p className="text-gray-600 mb-4">
                     학부모님께 보내는 가정통신문을 AI가 작성해 드립니다. 행사 안내, 교육과정 안내 등 상황에 맞는 맞춤형 통신문을 빠르게 생성하세요.
                   </p>
-                  <div className="flex items-center text-indigo-600 font-semibold">
-                    준비중 <span className="ml-2">...</span>
+                  <div className="flex items-center text-indigo-600 font-semibold group-hover:text-indigo-800">
+                    바로가기 <span className="ml-2 transition duration-300 group-hover:translate-x-1">→</span>
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
             
             {/* 카카오톡 오픈 카톡방 */}
             <a href="https://open.kakao.com/o/gubGYQ7g" target="_blank" rel="noopener noreferrer" className="block group" id="community">
@@ -316,7 +319,7 @@ const TeachersAI = () => {
                 <ul className="space-y-2">
                   <li><a href="https://script.google.com/macros/s/AKfycbygtpi71zrBa__Nf9glDHadq0HlojLg1kLXU4zhqPHIzK3DJBdsH9d5-zqqQsXpwOabMA/exec" target="_blank" rel="noopener noreferrer" className="hover:text-white">AI 퀴즈 생성기</a></li>
                   <li><a href="https://script.google.com/macros/s/AKfycby8TGGcuL7Vm7gkz_X2h6wBV7ClhKUL89va3AzsGlNnAJRleuB60A5eiYYbKKr7XeT8NA/exec" target="_blank" rel="noopener noreferrer" className="hover:text-white">AI 설문 생성기</a></li>
-                  <li><a className="text-gray-500 cursor-not-allowed">AI 통신문 생성기</a></li>
+                  <li><a href="https://script.google.com/macros/s/AKfycbzaAqlDZZycMuRp6YGhqSpurL-sseqj6VtksSyR5SMv8_WazTXpTN949RVAeprvkuqt-A/exec" target="_blank" rel="noopener noreferrer" className="hover:text-white">AI 통신문 생성기</a></li>
                 </ul>
               </div>
               
