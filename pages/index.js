@@ -79,7 +79,7 @@ const TeachersAI = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* AI 퀴즈 생성기 */}
-            <a href="https://script.google.com/macros/s/AKfycbz-RDjOjfRw_QB3At8FIcYPyd-rRCxiqenVqPcZCSm07DJsw77ZNGF2oIaPwe9ZDvQq/exec" target="_blank" rel="noopener noreferrer" className="block group">
+            <a href="https://script.google.com/macros/s/AKfycbygtpi71zrBa__Nf9glDHadq0HlojLg1kLXU4zhqPHIzK3DJBdsH9d5-zqqQsXpwOabMA/exec" target="_blank" rel="noopener noreferrer" className="block group">
               <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                 <div className="h-48 bg-indigo-100 relative overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -102,7 +102,7 @@ const TeachersAI = () => {
             </a>
             
             {/* AI 설문 생성기 */}
-            <a href="https://script.google.com/macros/s/AKfycbxVscH6tyaSOZkxLcD07MQh4KSxLI0L5F3FCZlFczF1ztWUaCQ-_zyo2zrVq_c-So7cZQ/exec" target="_blank" rel="noopener noreferrer" className="block group">
+            <a href="https://script.google.com/macros/s/AKfycby8TGGcuL7Vm7gkz_X2h6wBV7ClhKUL89va3AzsGlNnAJRleuB60A5eiYYbKKr7XeT8NA/exec" target="_blank" rel="noopener noreferrer" className="block group">
               <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                 <div className="h-48 bg-purple-100 relative overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -297,8 +297,8 @@ const TeachersAI = () => {
               <div>
                 <h3 className="text-white font-bold mb-4">서비스</h3>
                 <ul className="space-y-2">
-                  <li><a href="https://script.google.com/macros/s/AKfycbz-RDjOjfRw_QB3At8FIcYPyd-rRCxiqenVqPcZCSm07DJsw77ZNGF2oIaPwe9ZDvQq/exec" target="_blank" rel="noopener noreferrer" className="hover:text-white">AI 퀴즈 생성기</a></li>
-                  <li><a href="https://script.google.com/macros/s/AKfycbxVscH6tyaSOZkxLcD07MQh4KSxLI0L5F3FCZlFczF1ztWUaCQ-_zyo2zrVq_c-So7cZQ/exec" target="_blank" rel="noopener noreferrer" className="hover:text-white">AI 설문 생성기</a></li>
+                  <li><a href="https://script.google.com/macros/s/AKfycbygtpi71zrBa__Nf9glDHadq0HlojLg1kLXU4zhqPHIzK3DJBdsH9d5-zqqQsXpwOabMA/exec" target="_blank" rel="noopener noreferrer" className="hover:text-white">AI 퀴즈 생성기</a></li>
+                  <li><a href="https://script.google.com/macros/s/AKfycby8TGGcuL7Vm7gkz_X2h6wBV7ClhKUL89va3AzsGlNnAJRleuB60A5eiYYbKKr7XeT8NA/exec" target="_blank" rel="noopener noreferrer" className="hover:text-white">AI 설문 생성기</a></li>
                   <li><a className="text-gray-500 cursor-not-allowed">AI 통신문 생성기</a></li>
                 </ul>
               </div>
