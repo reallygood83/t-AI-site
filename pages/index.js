@@ -102,7 +102,7 @@ const TeachersAI = () => {
             </a>
             
             {/* AI 설문 생성기 */}
-            <a href="https://script.google.com/macros/s/AKfycbztKlHC2e49fhtDJKA9DXOBWoZHDlWtPo7xNji4v2rJ5elrbOCBN3ePs1o43uEBAdgpQQ/exec" target="_blank" rel="noopener noreferrer" className="block group">
+            <a href="https://script.google.com/macros/s/AKfycbxVscH6tyaSOZkxLcD07MQh4KSxLI0L5F3FCZlFczF1ztWUaCQ-_zyo2zrVq_c-So7cZQ/exec" target="_blank" rel="noopener noreferrer" className="block group">
               <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                 <div className="h-48 bg-purple-100 relative overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -298,7 +298,7 @@ const TeachersAI = () => {
                 <h3 className="text-white font-bold mb-4">서비스</h3>
                 <ul className="space-y-2">
                   <li><a href="https://script.google.com/macros/s/AKfycbz-RDjOjfRw_QB3At8FIcYPyd-rRCxiqenVqPcZCSm07DJsw77ZNGF2oIaPwe9ZDvQq/exec" target="_blank" rel="noopener noreferrer" className="hover:text-white">AI 퀴즈 생성기</a></li>
-                  <li><a href="https://script.google.com/macros/s/AKfycbztKlHC2e49fhtDJKA9DXOBWoZHDlWtPo7xNji4v2rJ5elrbOCBN3ePs1o43uEBAdgpQQ/exec" target="_blank" rel="noopener noreferrer" className="hover:text-white">AI 설문 생성기</a></li>
+                  <li><a href="https://script.google.com/macros/s/AKfycbxVscH6tyaSOZkxLcD07MQh4KSxLI0L5F3FCZlFczF1ztWUaCQ-_zyo2zrVq_c-So7cZQ/exec" target="_blank" rel="noopener noreferrer" className="hover:text-white">AI 설문 생성기</a></li>
                   <li><a className="text-gray-500 cursor-not-allowed">AI 통신문 생성기</a></li>
                 </ul>
               </div>
