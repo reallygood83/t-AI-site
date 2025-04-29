@@ -11,14 +11,16 @@ const AiTools = () => {
       {/* 네비게이션 바 */}
       <nav className="bg-indigo-600 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center">
+          <a href="/" className="flex items-center hover:text-yellow-200">
             <div className="text-3xl font-bold mr-2">👨‍🏫</div>
             <h1 className="text-2xl font-extrabold">Teachers <span className="text-yellow-300">AI</span></h1>
-          </div>
+          </a>
           <div className="hidden md:flex space-x-6">
             <a href="/" className="hover:text-yellow-200">서비스 소개</a>
             <a href="/ai-tools" className="hover:text-yellow-200">AI 도구</a>
             <a href="/community" className="hover:text-yellow-200">커뮤니티</a>
+            <a href="/api-key" className="hover:text-yellow-200">API 발급</a>
+            <a href="/setup-guide" className="hover:text-yellow-200">사용 설정</a>
             <a href="https://www.notion.so/1b210244f997802f8557c739dd3986f6" className="hover:text-yellow-200">문의하기</a>
           </div>
           <div>

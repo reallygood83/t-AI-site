@@ -13,10 +13,10 @@ const TeachersAI = () => {
       {/* 네비게이션 바 */}
       <nav className="bg-indigo-600 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center">
+          <a href="/" className="flex items-center hover:text-yellow-200">
             <div className="text-3xl font-bold mr-2">👨‍🏫</div>
             <h1 className="text-2xl font-extrabold">Teachers <span className="text-yellow-300">AI</span></h1>
-          </div>
+          </a>
           <div className="hidden md:flex space-x-6">
             <a href="#intro" className="hover:text-yellow-200">서비스 소개</a>
             <a href="/ai-tools" className="hover:text-yellow-200">AI 도구</a>
@@ -50,6 +50,9 @@ const TeachersAI = () => {
               </button>
               <button onClick={() => window.location.href='/api-key'} className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-indigo-700 transition duration-300 flex items-center justify-center">
                 API 발급받기
+              </button>
+              <button onClick={() => window.location.href='/setup-guide'} className="bg-yellow-300 text-indigo-700 px-6 py-3 rounded-full font-bold hover:bg-yellow-400 transition duration-300 flex items-center justify-center">
+                사용 설정하기
               </button>
             </div>
           </div>
