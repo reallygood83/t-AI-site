@@ -21,6 +21,7 @@ const TeachersAI = () => {
             <a href="#intro" className="hover:text-yellow-200">서비스 소개</a>
             <a href="/ai-tools" className="hover:text-yellow-200">AI 도구</a>
             <a href="/community" className="hover:text-yellow-200">커뮤니티</a>
+            <a href="/api-key" className="hover:text-yellow-200">API 발급</a>
             <a href="https://www.notion.so/1b210244f997802f8557c739dd3986f6" className="hover:text-yellow-200">문의하기</a>
           </div>
           <div>
@@ -47,9 +48,9 @@ const TeachersAI = () => {
               <button className="bg-white text-indigo-700 px-6 py-3 rounded-full font-bold hover:bg-yellow-200 transition duration-300 flex items-center justify-center" onClick={() => window.location.href='/ai-tools'}>
                 지금 시작하기 →
               </button>
-              <button className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-indigo-700 transition duration-300 flex items-center justify-center">
-                AI 도구 알아보기
-              </button>
+              <a href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-indigo-700 transition duration-300 flex items-center justify-center">
+                API 발급받기
+              </a>
             </div>
           </div>
           <div className="md:w-1/2">
