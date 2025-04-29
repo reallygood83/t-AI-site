@@ -45,15 +45,18 @@ const APIKey = () => {
               href="https://aistudio.google.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full font-bold hover:bg-indigo-700 transition duration-300"
+              className="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl text-lg"
             >
-              발급 사이트 바로가기 →
+              <span>발급 사이트 바로가기</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
             </a>
           </div>
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden" style={{height: "800px"}}>
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <iframe 
               src="https://app.tango.us/app/embed/ea16fb5b-d2d8-4863-b467-68d53f9ea746" 
-              style={{minHeight: "800px"}}
+              style={{minHeight: "640px"}} 
               sandbox="allow-scripts allow-top-navigation-by-user-activation allow-popups allow-same-origin" 
               security="restricted" 
               title="제미나이 API 생성하기 via Google AI Studio" 
@@ -63,7 +66,7 @@ const APIKey = () => {
               frameBorder="0" 
               webkitallowfullscreen="webkitallowfullscreen" 
               mozallowfullscreen="mozallowfullscreen" 
-              allowFullScreen={true}
+              allowFullScreen="allowfullscreen"
             />
           </div>
         </div>
