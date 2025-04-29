@@ -1,20 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Head from 'next/head';
 
 const AiTools = () => {
-  const [iframeUrl, setIframeUrl] = useState('');
-  const [showIframe, setShowIframe] = useState(false);
-
-  const openIframe = url => {
-    setIframeUrl(url);
-    setShowIframe(true);
-  };
-
-  const closeIframe = () => {
-    setShowIframe(false);
-    setIframeUrl('');
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Head>
@@ -41,20 +28,6 @@ const AiTools = () => {
           </div>
         </div>
       </nav>
-      {/* iframe 모달 */}
-      {showIframe && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-lg w-full max-w-4xl h-[80vh] flex flex-col">
-            <div className="flex justify-between items-center p-4 border-b">
-              <span className="font-bold">외부 서비스</span>
-              <button onClick={closeIframe} className="text-gray-500 hover:text-gray-700">닫기</button>
-            </div>
-            <div className="flex-1 overflow-hidden">
-              <iframe src={iframeUrl} className="w-full h-full" title="외부 서비스" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" />
-            </div>
-          </div>
-        </div>
-      )}
       <main className="flex-1">
         <section className="py-8 bg-white">
           <div className="container mx-auto px-4 text-center">
@@ -68,7 +41,10 @@ const AiTools = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* AI 퀴즈 생성기 */}
-              <a href="#" onClick={e => {e.preventDefault(); openIframe('https://script.google.com/macros/s/AKfycbxQSnmZ96aPFwH_Vns3p2dsTyrk9xifsqZgRXzACiKPqqUHvflSOQZJAFPiv3GkkuLj/exec');}} className="block group">
+              <a href="https://script.google.com/macros/s/AKfycbygtpi71zrBa__Nf9glDHadq0HlojLg1kLXU4zhqPHIzK3DJBdsH9d5-zqqQsXpwOabMA/exec" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="block group">
                 <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                   <div className="h-48 bg-indigo-100 relative overflow-hidden">
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -90,7 +66,10 @@ const AiTools = () => {
                 </div>
               </a>
               {/* AI 설문 생성기 */}
-              <a href="#" onClick={e => {e.preventDefault(); openIframe('https://script.google.com/macros/s/AKfycbztKlHC2e49fhtDJKA9DXOBWoZHDlWtPo7xNji4v2rJ5elrbOCBN3ePs1o43uEBAdgpQQ/exec');}} className="block group">
+              <a href="https://script.google.com/macros/s/AKfycby8TGGcuL7Vm7gkz_X2h6wBV7ClhKUL89va3AzsGlNnAJRleuB60A5eiYYbKKr7XeT8NA/exec"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group">
                 <div className="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                   <div className="h-48 bg-purple-100 relative overflow-hidden">
                     <div className="absolute inset-0 flex items-center justify-center">
